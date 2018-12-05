@@ -85,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
+                String name = "sarathy";
+                String name2 = "sarathy";
+
             }
 
             @Override
