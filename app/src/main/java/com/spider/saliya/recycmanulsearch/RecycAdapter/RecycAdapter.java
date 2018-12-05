@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.TextView;
 
-import com.spider.saliya.recycmanulsearch.Bean.Bean;
 import com.spider.saliya.recycmanulsearch.MainActivity;
 import com.spider.saliya.recycmanulsearch.R;
 
@@ -20,14 +19,13 @@ import java.util.Optional;
 public class RecycAdapter extends RecyclerView.Adapter<RecycAdapter.MyViewHolder> {
 
     ArrayList<String> arrayList;
+    MainActivity activity;
 
-
-    public RecycAdapter(ArrayList<String> arrayList) {
+    public RecycAdapter(MainActivity mainActivity, ArrayList<String> arrayList) {
         this.arrayList = arrayList;
+        this.activity = activity;
     }
 
-
-    @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.activity_recyc, viewGroup, false);
